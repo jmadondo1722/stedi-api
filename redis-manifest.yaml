@@ -5,9 +5,11 @@ metadata:
 spec:
   selector:
     matchLabels:
-      app: redis-stedi-josiah  # has to match .spec.template.metadata.labels
+      app: redis-stedi-josiah
+        # has to match .spec.template.metadata.labels
   serviceName: redis-stedi-josiah
-  replicas: 2
+
+  replicas: 1
   template:
     metadata:
       labels:
@@ -51,3 +53,4 @@ spec:
   clusterIP: None
   selector:
     app: redis-stedi-josiah
+
